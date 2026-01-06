@@ -326,7 +326,7 @@ triggers{
     else_actions{
       unitSetProperties{
         object:t="Runner Squad"
-        useForTriggerFiltered:b=yes
+        useForTriggerFiltered:b=no
         plane{
           thrust_mult:r=1
         }
