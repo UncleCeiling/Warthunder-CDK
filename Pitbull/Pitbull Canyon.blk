@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Pitbull Canyon"
-    locDesc:t="A Canyon for playing Pitbull"
+    locDesc:t="Runners (Allies) must fly through the canyon while being chased by the Pitbulls (Axis). When you die, swap teams and try to hunt down the remaining Runners. Stay safe by flying low and fast. Runners also have to contend with the Danger Zone above 2000m altitude over Canyon."
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
@@ -121,6 +121,10 @@ triggers{
         detectionArea:b=no
         killOutOfBattleArea:b=yes
         area:t="Map Area"
+      }
+
+      playerOptions{
+        allowBailout:b=no
       }
     }
 
@@ -219,7 +223,7 @@ triggers{
 
   Safety{
     is_enabled:b=yes
-    comments:t="Manages destructability of Runners"
+    comments:t="Manages safety of Runners"
 
     props{
       actionsType:t="PERFORM_ONE_BY_ONE"
@@ -3350,7 +3354,7 @@ areas{
 
   "Danger Zone"{
     type:t="Box"
-    tm:m=[[15756.9, 0, -2778.37] [0, 8000, 0] [2083.78, 0, 11817.7] [-3300, 2000, -7884.82]]
+    tm:m=[[15756.9, 0, -2778.37] [0, 7800, 0] [2083.78, 0, 11817.7] [-3300, 2200, -7884.82]]
     objLayer:i=0
 
     props{}
