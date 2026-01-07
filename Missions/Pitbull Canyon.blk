@@ -144,7 +144,7 @@ triggers{
     conditions{}
     actions{
       missionMarkAsRespawnPoint{
-        loc_name:t="Runner Spawn"
+        loc_name:t="South Runner Spawn"
         spawnEffect:b=no
         isStrictSpawn:b=no
         resetStrictSpawnIndex:b=no
@@ -160,9 +160,9 @@ triggers{
         canSpawnOnNeutral:b=no
         showOnMap:b=yes
         radius:r=-1
-        target:t="Runner Spawn"
+        target:t="South Runner Spawn"
         team:t="A"
-        spawnArrangeTo:t="Runner Lookat"
+        spawnArrangeTo:t="South Runner Lookat"
       }
 
       missionMarkAsRespawnPoint{
@@ -185,6 +185,32 @@ triggers{
         target:t="Pitbull Spawn"
         team:t="B"
         spawnArrangeTo:t="Pitbull Lookat"
+      }
+
+      missionMarkAsRespawnPoint{
+        loc_name:t="North Runner Spawn"
+        spawnEffect:b=no
+        isStrictSpawn:b=no
+        resetStrictSpawnIndex:b=no
+        isAirfield:b=no
+        isUnit:b=no
+        forceCreate:b=no
+        useExisting:b=no
+        ignoreTeamsOnReuse:b=no
+        isIndividual:b=no
+        onlyOnePlayerPerSpawnPoint:b=no
+        removeAreas:b=no
+        replaceAreas:b=no
+        canSpawnOnNeutral:b=no
+        showOnMap:b=yes
+        radius:r=-1
+        target:t="North Runner Spawn"
+        team:t="A"
+        spawnArrangeTo:t="North Runner Lookat"
+
+        tags{
+          air:b=yes
+        }
       }
     }
 
@@ -263,7 +289,7 @@ triggers{
         object_var_name:t=""
         object_var_comp_op:t="equal"
         object_var_value:i=0
-        useForTriggerFiltered:b=yes
+        target_type:t="isTeamA"
       }
     }
   }
@@ -301,6 +327,7 @@ triggers{
       unitSetProperties{
         object:t="Runner Squad"
         useForTriggerFiltered:b=yes
+
         plane{
           thrust_mult:r=-1
         }
@@ -319,6 +346,7 @@ triggers{
         object_var_comp_op:t="equal"
         object_var_value:i=0
         shouldBlink:b=yes
+        warningTime:r=1
         useForTriggerFiltered:b=yes
       }
     }
@@ -327,6 +355,7 @@ triggers{
       unitSetProperties{
         object:t="Runner Squad"
         useForTriggerFiltered:b=no
+
         plane{
           thrust_mult:r=1
         }
@@ -3323,7 +3352,7 @@ areas{
     props{}
   }
 
-  "Runner Spawn"{
+  "South Runner Spawn"{
     type:t="Sphere"
     tm:m=[[-99.6195, 0, 8.71559] [0, 100, 0] [-148.165, 0, -1693.53] [-300, 2500, -24500]]
     objLayer:i=0
@@ -3355,9 +3384,25 @@ areas{
     props{}
   }
 
-  "Runner Lookat"{
+  "South Runner Lookat"{
     type:t="Point"
     tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [-10800, 2500, -20300]]
+    objLayer:i=0
+
+    props{}
+  }
+
+  "North Runner Lookat"{
+    type:t="Point"
+    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [-4400, 3200, 7000]]
+    objLayer:i=0
+
+    props{}
+  }
+
+  "North Runner Spawn"{
+    type:t="Sphere"
+    tm:m=[[-99.6195, 0, 8.71559] [0, 100, 0] [-148.165, 0, -1693.53] [6000, 3200, 5400]]
     objLayer:i=0
 
     props{}
