@@ -327,6 +327,7 @@ triggers{
       unitSetProperties{
         object:t="Runner Squad"
         useForTriggerFiltered:b=yes
+        cannotShoot:b=yes
 
         plane{
           thrust_mult:r=-1
@@ -355,37 +356,13 @@ triggers{
       unitSetProperties{
         object:t="Runner Squad"
         useForTriggerFiltered:b=no
+        cannotShoot:b=no
 
         plane{
           thrust_mult:r=1
         }
       }
     }
-  }
-
-  "Disable Runner Weapons"{
-    is_enabled:b=yes
-    comments:t=""
-
-    props{
-      actionsType:t="PERFORM_ONE_BY_ONE"
-      conditionsType:t="ALL"
-      enableAfterComplete:b=no
-    }
-
-    events{
-      initMission{}
-    }
-
-    conditions{}
-    actions{
-      unitSetProperties{
-        object:t="Runner Squad"
-        cannotShoot:b=yes
-      }
-    }
-
-    else_actions{}
   }
 }
 

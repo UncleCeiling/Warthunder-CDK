@@ -14,17 +14,22 @@ This way, missions can be updated by simply refreshing the mission in game inste
 
 #### Canyon
 
-🟢 Map Boundaries
-🟢 Spawns
-    🟢 1 Pitbull Spawn
-    🟢 2 Runner Spawns
-        🔴 Disable Runner Weapons, but not countermeasures
-    🟢 Both face the right direction
-🟢 Danger Zone
-    🟢 
-🔴 Find way to have Safety hint only show for runners
-🔴 Fix Immortality not working
-🔴 Add spawn limitations
+🟢 Map Boundaries.
+🟢 Spawns.
+    🟢 1 Pitbull Spawn.
+    🟢 2 Runner Spawns.
+        ⚫ Disable Runner Weapons, but not countermeasures - Not possible.
+    🟢 Both face the right direction.
+🟢 Danger Zone.
+    🟢 Punishes Runners, but not Pitbulls.
+    🟢 Speed and countermeasure use is restricted
+    🟢 Warning
+        🟢Turns off after you leave the area.
+🟢 Add spawn limitations.
+    🟢 Limits to Aircraft.
+    🔵 Limits BR (Done via mission selection screen).
+🔴 Fix Immortality not working.
+🔴 Find way to have Safety hint only show for runners.
 
 #### Port Moresby???
 
