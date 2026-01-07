@@ -15,9 +15,13 @@ This way, missions can be updated by simply refreshing the mission in game inste
 #### Canyon
 
 🟢 Map Boundaries
-🟢 Spawns (Facing the right direction)
-🟢 Danger Zone (And consequences)
-🟢 Add 2nd Runner Spawn
+🟢 Spawns
+    🟢 1 Pitbull Spawn
+    🟢 2 Runner Spawns
+        🔴 Disable Runner Weapons, but not countermeasures
+    🟢 Both face the right direction
+🟢 Danger Zone
+    🟢 
 🔴 Find way to have Safety hint only show for runners
 🔴 Fix Immortality not working
 🔴 Add spawn limitations

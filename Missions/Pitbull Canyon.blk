@@ -362,6 +362,31 @@ triggers{
       }
     }
   }
+
+  "Disable Runner Weapons"{
+    is_enabled:b=yes
+    comments:t=""
+
+    props{
+      actionsType:t="PERFORM_ONE_BY_ONE"
+      conditionsType:t="ALL"
+      enableAfterComplete:b=no
+    }
+
+    events{
+      initMission{}
+    }
+
+    conditions{}
+    actions{
+      unitSetProperties{
+        object:t="Runner Squad"
+        cannotShoot:b=yes
+      }
+    }
+
+    else_actions{}
+  }
 }
 
 mission_objectives{
