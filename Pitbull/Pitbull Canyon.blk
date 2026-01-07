@@ -368,7 +368,7 @@ triggers{
   }
 
   "Disable Bailout"{
-    is_enabled:b=no
+    is_enabled:b=yes
     comments:t=""
 
     props{

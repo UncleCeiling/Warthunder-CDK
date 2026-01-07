@@ -1,55 +1,60 @@
-# Warthunder-CDK
+# **Warthunder-CDK**
 
 A place to record and work on Warthunder Missions
 
-## Using these Mission Files
+## *Using these Mission Files*
 
 These missions can be used by creating a custom Mission and using the "Mission from URL" option.
 Then simply use the link to the raw file on github (removing the `s` from `https`) as the URL.
 This way, missions can be updated by simply refreshing the mission in game instead of having to copy and paste links over and over.
 
-## WIP Missions
+## *WIP Missions*
 
-### Pitbull
+### **Pitbull**
 
-#### Canyon
+#### *Canyon*
 
-🟢 Map Boundaries.
-🟢 Spawns.
-🟢 1 Pitbull Spawn.
-🟢 2 Runner Spawns.
-⚫ Disable Runner Weapons, but not countermeasures - Not possible.
+🟢 **Map Boundaries.**
+
+🟢 **Spawns.**  
+🟢 1 Pitbull Spawn.  
+🟢 2 Runner Spawns.  
+⚫ Disable Runner Weapons, but not countermeasures - Not possible.  
 🟢 Both face the right direction.
-🟢 Danger Zone.
-🟢 Punishes Runners, but not Pitbulls.
-🟢 Speed and countermeasure use is restricted
-🟢 Warning
-🟢Turns off after you leave the area.
-🟢 Add spawn limitations.
-🟢 Limits to Aircraft.
+
+🟢 **Danger Zone.**  
+🟢 Punishes Runners, but not Pitbulls.  
+🟢 Speed and countermeasure use is restricted.  
+🟢 Warning while in zone.  
+🟢 Turns off after you leave the area.
+
+🟢 **Spawn limitations.**  
+🟢 Limits to Aircraft.  
 🔵 Limits BR (Done via mission selection screen).
-🔴 Fix Immortality not working.
+
+🟡 **Safety Zones.**  
+🔴 Fix Immortality not working.  
 🔴 Find way to have Safety hint only show for runners.
 
-#### Port Moresby???
+#### *Port Moresby???*
 
-## TODO Missions
+## *TODO Missions*
 
-### Bulldog
+### **Bulldog**
 
-#### Sands
+#### *Sands*
 
-### Destruction Derby???
+### **Destruction Derby???**
 
-#### Sinai
+#### *Sinai*
 
-####
+#### *Flanders*
 
-### Skeet Shooting???
+### **Skeet Shooting???**
 
-### Trench Run???
+### **Trench Run???**
 
-### Winter Olympics???
+### **Winter Olympics???**
 
 #### Ski Jump???
 
