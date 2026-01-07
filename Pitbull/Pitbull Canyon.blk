@@ -122,10 +122,6 @@ triggers{
         killOutOfBattleArea:b=yes
         area:t="Map Area"
       }
-
-      playerOptions{
-        allowBailout:b=no
-      }
     }
 
     else_actions{}
@@ -369,6 +365,32 @@ triggers{
         }
       }
     }
+  }
+
+  "Disable Bailout"{
+    is_enabled:b=no
+    comments:t=""
+
+    props{
+      actionsType:t="PERFORM_ONE_BY_ONE"
+      conditionsType:t="ALL"
+      enableAfterComplete:b=no
+    }
+
+    events{
+      periodicEvent{
+        time:r=1
+      }
+    }
+
+    conditions{}
+    actions{
+      playerOptions{
+        allowBailout:b=no
+      }
+    }
+
+    else_actions{}
   }
 }
 
