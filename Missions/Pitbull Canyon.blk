@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Pitbull Canyon"
-    locDesc:t="A Canyon for playing Pitbull"
+    locDesc:t="A Canyon for playing Pitbull. Runners must fly through the canyon while being chased by the Pitbulls. Stay safe by flying low and fast. There is a Danger Zone above the canyon, reaching all the way down to 2000m altitude."
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
