@@ -274,7 +274,7 @@ triggers{
     else_actions{
       unitSetProperties{
         object:t="Runner Squad"
-        useForTriggerFiltered:b=no
+        useForTriggerFiltered:b=yes
         isImmortal:b=yes
       }
 
@@ -290,7 +290,7 @@ triggers{
         object_var_name:t=""
         object_var_comp_op:t="equal"
         object_var_value:i=0
-        useForTriggerFiltered:b=no
+        useForTriggerFiltered:b=yes
         team:t="A"
       }
     }
