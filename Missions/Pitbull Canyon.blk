@@ -289,7 +289,8 @@ triggers{
         object_var_name:t=""
         object_var_comp_op:t="equal"
         object_var_value:i=0
-        target_type:t="isTeamA"
+        useForTriggerFiltered:b=yes
+        team:t="A"
       }
     }
   }
