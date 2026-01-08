@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Pitbull Canyon"
-    locDesc:t="Runners (Allies) must fly through the canyon while being chased by the Pitbulls (Axis). When you die, swap teams and try to hunt down the remaining Runners. Stay safe by flying low and fast. Runners also have to contend with the Danger Zone above 2200m altitude over the Canyon. v0.1.9"
+    locDesc:t="Runners (Allies) must fly through the canyon while being chased by the Pitbulls (Axis). When you die, swap teams and try to hunt down the remaining Runners. Stay safe by flying low and fast. Runners also have to contend with the Danger Zone above 2200m altitude over the Canyon. v0.1.10"
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
@@ -286,8 +286,8 @@ triggers{
         player_var_name:t=""
         player_var_comp_op:t="equal"
         player_var_value:i=0
-        target:t="Pitbull Squad"
-        player:t="Runner Squad"
+        target:t="Runner Squad"
+        player:t="Pitbull Squad"
       }
 
       playHint{
@@ -318,7 +318,7 @@ triggers{
         player_var_comp_op:t="equal"
         player_var_value:i=0
         target:t="Runner Squad"
-        player:t="Runner Squad"
+        player:t=""
       }
 
       playHint{
