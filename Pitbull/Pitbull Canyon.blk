@@ -289,7 +289,7 @@ triggers{
 
       unitSetProperties{
         object:t="Runner Squad"
-        useForTriggerFiltered:b=
+        useForTriggerFiltered:b=yes
         isImmortal:b=yes
       }
     }
