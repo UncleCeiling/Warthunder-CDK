@@ -80,11 +80,11 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Pitbull Canyon"
-    locDesc:t="Runners (Allies) must fly through the canyon while being chased by the Pitbulls (Axis). When you die, swap teams and try to hunt down the remaining Runners. Stay safe by flying low and fast. Runners also have to contend with the Danger Zone above 2200m altitude over the Canyon. v0.1.10"
+    locDesc:t="Runners (Allies) must fly through the canyon while being chased by the Pitbulls (Axis). When you die, swap teams and try to hunt down the remaining Runners. Stay safe by flying low and fast. Runners also have to contend with the Danger Zone above 2200m altitude over the Canyon. v0.1.11"
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
-    timeLimit:i=20
+    timeLimit:i=300
     deathPenaltyMul:r=0
     isBotsAllowed:b=no
     allowEmptyTeams:b=yes
@@ -237,7 +237,7 @@ triggers{
         object:t="Runner Squad"
         isImmortal:b=yes
       }
-      
+
       unitSetProperties{
         object:t="Pitbull Squad"
         isImmortal:b=yes
@@ -252,7 +252,7 @@ triggers{
     comments:t="Manages safety of Runners"
 
     props{
-      actionsType:t="PERFORM_ONE_BY_ONE"
+      actionsType:t="PERFORM_ALL"
       conditionsType:t="ALL"
       enableAfterComplete:b=yes
     }
@@ -265,7 +265,7 @@ triggers{
 
     conditions{
       unitWhenInArea{
-        math:t="3D"
+        math:t="2D"
         object_type:t="isTeamA"
         object_marking:i=0
         object_var_name:t=""
@@ -287,6 +287,7 @@ triggers{
         player_var_comp_op:t="equal"
         player_var_value:i=0
         target:t="Runner Squad"
+        target_type:t="isTeamA"
         player:t="Pitbull Squad"
       }
 
@@ -318,7 +319,8 @@ triggers{
         player_var_comp_op:t="equal"
         player_var_value:i=0
         target:t="Runner Squad"
-        player:t=""
+        target_type:t="isTeamA"
+        player:t="Runner Squad"
       }
 
       playHint{
