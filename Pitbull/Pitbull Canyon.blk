@@ -251,7 +251,6 @@ triggers{
         hintType:t="standard"
         name:t="!!!NOT SAFE!!!"
         action:t="show"
-        blink:b=yes
         shouldFadeOut:b=no
         isOverFade:b=no
         time:r=1
@@ -290,7 +289,7 @@ triggers{
 
       unitSetProperties{
         object:t="Runner Squad"
-        useForTriggerFiltered:b=yes
+        useForTriggerFiltered:b=
         isImmortal:b=yes
       }
     }
@@ -351,6 +350,7 @@ triggers{
         shouldBlink:b=yes
         warningTime:r=1
         useForTriggerFiltered:b=yes
+        team:t="A"
       }
     }
 
