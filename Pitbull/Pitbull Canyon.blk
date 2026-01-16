@@ -217,36 +217,6 @@ triggers{
     else_actions{}
   }
 
-  "Invulnerability ON"{
-    is_enabled:b=yes
-    comments:t=""
-
-    props{
-      actionsType:t="PERFORM_ONE_BY_ONE"
-      conditionsType:t="ALL"
-      enableAfterComplete:b=no
-    }
-
-    events{
-      initMission{}
-    }
-
-    conditions{}
-    actions{
-      unitSetProperties{
-        object:t="Runner Squad"
-        isImmortal:b=yes
-      }
-
-      unitSetProperties{
-        object:t="Pitbull Squad"
-        isImmortal:b=yes
-      }
-    }
-
-    else_actions{}
-  }
-
   Safety{
     is_enabled:b=yes
     comments:t="Manages safety of Runners"
@@ -277,20 +247,6 @@ triggers{
     }
 
     actions{
-      unitVulnerableFrom{
-        target_marking:i=0
-        object_var_name:t=""
-        object_var_comp_op:t="equal"
-        object_var_value:i=0
-        player_marking:i=0
-        player_var_name:t=""
-        player_var_comp_op:t="equal"
-        player_var_value:i=0
-        target:t="Runner Squad"
-        target_type:t="isTeamA"
-        player:t="Runner Squad"
-      }
-
       playHint{
         hintType:t="standard"
         name:t="!!!NOT SAFE!!!"
@@ -309,20 +265,6 @@ triggers{
     }
 
     else_actions{
-      unitVulnerableFrom{
-        target_marking:i=0
-        object_var_name:t=""
-        object_var_comp_op:t="equal"
-        object_var_value:i=0
-        player_marking:i=0
-        player_var_name:t=""
-        player_var_comp_op:t="equal"
-        player_var_value:i=0
-        target:t="Runner Squad"
-        target_type:t="isTeamA"
-        player:t="Pitbull Squad"
-      }
-
       playHint{
         hintType:t="standard"
         name:t="SAFE"
