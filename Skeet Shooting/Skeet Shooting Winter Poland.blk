@@ -1,0 +1,129 @@
+selected_tag:t=""
+bin_dump_file:t=""
+
+mission_settings{
+  player{
+    army:i=1
+    wing:t="TeamA00"
+    wing:t="TeamA01"
+    wing:t="TeamA02"
+    wing:t="TeamA03"
+    wing:t="TeamA04"
+    wing:t="TeamA05"
+    wing:t="TeamA06"
+    wing:t="TeamA07"
+    wing:t="TeamA08"
+    wing:t="TeamA09"
+    wing:t="TeamA10"
+    wing:t="TeamA11"
+    wing:t="TeamA12"
+    wing:t="TeamA13"
+    wing:t="TeamA14"
+    wing:t="TeamA15"
+    wing:t="TeamA16"
+    wing:t="TeamA17"
+    wing:t="TeamA18"
+    wing:t="TeamA19"
+    wing:t="TeamA20"
+    wing:t="TeamA21"
+    wing:t="TeamA22"
+    wing:t="TeamA23"
+    wing:t="TeamA24"
+    wing:t="TeamA25"
+    wing:t="TeamA26"
+    wing:t="TeamA27"
+    wing:t="TeamA28"
+    wing:t="TeamA29"
+    wing:t="TeamA30"
+    wing:t="TeamA31"
+  }
+
+  player_teamB{
+    army:i=2
+    wing:t="TeamB00"
+    wing:t="TeamB01"
+    wing:t="TeamB02"
+    wing:t="TeamB03"
+    wing:t="TeamB04"
+    wing:t="TeamB05"
+    wing:t="TeamB06"
+    wing:t="TeamB07"
+    wing:t="TeamB08"
+    wing:t="TeamB09"
+    wing:t="TeamB10"
+    wing:t="TeamB11"
+    wing:t="TeamB12"
+    wing:t="TeamB13"
+    wing:t="TeamB14"
+    wing:t="TeamB15"
+    wing:t="TeamB16"
+    wing:t="TeamB17"
+    wing:t="TeamB18"
+    wing:t="TeamB19"
+    wing:t="TeamB20"
+    wing:t="TeamB21"
+    wing:t="TeamB22"
+    wing:t="TeamB23"
+    wing:t="TeamB24"
+    wing:t="TeamB25"
+    wing:t="TeamB26"
+    wing:t="TeamB27"
+    wing:t="TeamB28"
+    wing:t="TeamB29"
+    wing:t="TeamB30"
+    wing:t="TeamB31"
+  }
+
+  mission{
+    type:t="domination"
+    level:t="levels/avg_poland_snow.bin"
+    environment:t="Day"
+    weather:t="good"
+    locName:t="Skeet Shooting - Winter Poland"
+    locDesc:t="Runners go from one side of the lake to the other while getting shot at by Shooters. When you die, swap teams into a HE/HESH slinger to shoot at the Runners. v0.0.1"
+    isLimitedFuel:b=no
+    isLimitedAmmo:b=no
+    scoreLimit:i=5000
+    timeLimit:i=300
+    deathPenaltyMul:r=0
+    isBotsAllowed:b=no
+    allowEmptyTeams:b=yes
+  }
+}
+
+imports{}
+triggers{
+  isCategory:b=yes
+  is_enabled:b=yes
+}
+
+mission_objectives{
+  isCategory:b=yes
+  is_enabled:b=yes
+}
+
+variables{}
+dialogs{}
+airfields{}
+effects{}
+units{}
+areas{}
+objLayers{
+  layer{
+    enabled:b=yes
+  }
+
+  layer{
+    enabled:b=yes
+  }
+
+  layer{
+    enabled:b=yes
+  }
+
+  layer{
+    enabled:b=yes
+  }
+}
+
+wayPoints{}
