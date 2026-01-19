@@ -38,6 +38,12 @@ This way, missions can be updated by simply refreshing the mission in game inste
 
 #### *Port Moresby???*
 
+### **Skeet Shooting**
+
+#### *Poland Winter*
+
+#### *Undecided Ramp map*
+
 ## *TODO Missions*
 
 ### **Bulldog**
