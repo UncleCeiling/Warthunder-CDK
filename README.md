@@ -1,6 +1,6 @@
-# **Warthunder-CDK**
+# **War Thunder-CDK**
 
-A place to record and work on Warthunder Missions
+A place to record and work on War Thunder Missions
 
 ## *Using these Mission Files*
 
@@ -26,15 +26,15 @@ This way, missions can be updated by simply refreshing the mission in game inste
 🟢 Punishes Runners, but not Pitbulls.  
 🟢 Speed and countermeasure use is restricted.  
 🟢 Warning while in zone.  
-🟢 Turns off after you leave the area.
+🟢 Turns off after all runners have left the area.
 
 🟢 **Spawn limitations.**  
 🟢 Limits to Aircraft.  
-🔵 Limits BR (Done via mission selection screen).
+🔵 Limits BR (Done via mission selection screen).  
 
 🟡 **Safety Zones.**  
-🔴 Fix Immortality not working.  
-🔴 Find way to have Safety hint only show for runners.
+⚫ Fix Immortality not working. - Not working  
+⚫ Find way to have Safety hint only show for runners. - Not working  
 
 #### *Port Moresby???*
 
@@ -61,3 +61,5 @@ This way, missions can be updated by simply refreshing the mission in game inste
 #### Ice Skating/Hockey???
 
 #### Bob-sled???
+
+#### Three-legged Race???
