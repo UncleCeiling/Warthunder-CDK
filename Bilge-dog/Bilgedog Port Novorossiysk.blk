@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Bilge-dog - Port Novorossiysk"
-    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.2"
+    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.1"
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
@@ -115,11 +115,11 @@ triggers{
       missionBattleArea{
         air:b=yes
         ground:b=yes
-        mapArea:b=yes
-        airMapArea:b=yes
+        mapArea:b=no
+        airMapArea:b=no
         killArea:b=no
-        detectionArea:b=yes
-        killOutOfBattleArea:b=no
+        detectionArea:b=no
+        killOutOfBattleArea:b=yes
         area:t="Map Area"
       }
     }
