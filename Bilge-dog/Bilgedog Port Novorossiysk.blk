@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Bilge-dog - Port Novorossiysk"
-    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.3"
+    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.4"
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
@@ -114,7 +114,7 @@ triggers{
     actions{
       missionBattleArea{
         air:b=yes
-        ground:b=yes
+        ground:b=no
         mapArea:b=no
         airMapArea:b=no
         killArea:b=no
@@ -247,7 +247,7 @@ triggers{
         radius:r=-1
         target:t="A Runner Spawn"
         team:t="A"
-        spawnArrangeTo:t="B Runner Spawn"
+        spawnArrangeTo:t="Small Boat Spawn"
 
         tags{
           tank:b=yes
@@ -340,7 +340,7 @@ triggers{
         radius:r=-1
         target:t="D Runner Spawn"
         team:t="A"
-        spawnArrangeTo:t="C Runner Spawn"
+        spawnArrangeTo:t="Small Boat Lookat"
 
         tags{
           tank:b=yes
@@ -3331,7 +3331,7 @@ units{
 areas{
   "Big Boat Spawn"{
     type:t="Cylinder"
-    tm:m=[[200, 0, 0] [0, 100, 0] [0, 0, 200] [3800, -44.7246, 1200]]
+    tm:m=[[200, 0, 0] [0, 100, 0] [0, 0, 200] [2200, -44.7251, 400]]
     objLayer:i=0
 
     props{}
@@ -3339,7 +3339,7 @@ areas{
 
   "Big Boat Lookat "{
     type:t="Point"
-    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [2000, -0.000244141, 200]]
+    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [3900, -0.000244141, 1300]]
     objLayer:i=0
 
     props{}
@@ -3371,7 +3371,7 @@ areas{
 
   "Small Boat Spawn"{
     type:t="Cylinder"
-    tm:m=[[200, 0, 0] [0, 100, 0] [0, 0, 200] [2954.12, -44.7246, 1589.56]]
+    tm:m=[[200, 0, 0] [0, 100, 0] [0, 0, 200] [3200, -44.7246, 1500]]
     objLayer:i=0
 
     props{}
