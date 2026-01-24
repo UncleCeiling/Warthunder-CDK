@@ -49,7 +49,7 @@
 💀avg_abandoned_factory.bin  
 ✅avg_abandoned_town.bin  
 ❌avg_africa_desert.bin  
-✅avg_alaska_town.bin  
+✅avg_alaska_town.bin - Anchorage  
 ✅avg_american_valley.bin  
 ❌avg_aral_sea.bin  
 ❌avg_arctic.bin  
@@ -64,7 +64,7 @@
 ✅avg_football_field.bin  
 ❌avg_fulda.bin  
 ❌avg_greece.bin  
-✅avg_guadalcanal.bin  
+✅avg_guadalcanal.bin - Jungle  
 ❌avg_hurtgen.bin  
 ✅avg_iberian_castle.bin  
 ❌avg_ireland.bin  
@@ -75,19 +75,19 @@
 ❌avg_karpaty_passage.bin  
 ❌avg_korea_lake.bin  
 ❌avg_krymsk.bin  
-✅avg_kursk_villages.bin  
-✅avg_lazzaro_italy_new_city.bin  
+✅avg_kursk_villages.bin - Fire Arc?  
+✅avg_lazzaro_italy_new_city.bin - Campania  
 ❌avg_maginot_rework.bin  
 ❌avg_mozdok.bin  
 ❌avg_netherlands.bin  
 ❌avg_normandy.bin  
 ❌avg_northern_india.bin  
 ❌avg_northern_valley.bin  
-✅avg_nuclear_incident.bin  
+✅avg_nuclear_incident.bin - Nuked Anchorage  
 ❌avg_poland.bin  
 ❌avg_poland_snow.bin  
-❌avg_port_novorossiysk.bin  
-✅avg_red_desert.bin  
+✅avg_port_novorossiysk.bin - Port Novorossiysk  
+✅avg_red_desert.bin - Red Desert  
 ❌avg_rheinland.bin  
 ✅avg_sector_montmedy.bin  
 ✅avg_sector_montmedy_snow.bin  
