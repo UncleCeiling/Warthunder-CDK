@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Bilge-dog - Port Novorossiysk"
-    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.1"
+    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.2"
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
@@ -95,6 +95,37 @@ imports{}
 triggers{
   isCategory:b=yes
   is_enabled:b=yes
+
+  "Map Area"{
+    is_enabled:b=yes
+    comments:t=""
+
+    props{
+      actionsType:t="PERFORM_ONE_BY_ONE"
+      conditionsType:t="ALL"
+      enableAfterComplete:b=no
+    }
+
+    events{
+      initMission{}
+    }
+
+    conditions{}
+    actions{
+      missionBattleArea{
+        air:b=yes
+        ground:b=yes
+        mapArea:b=yes
+        airMapArea:b=yes
+        killArea:b=no
+        detectionArea:b=yes
+        killOutOfBattleArea:b=no
+        area:t="Map Area"
+      }
+    }
+
+    else_actions{}
+  }
 
   "Boat Spawns"{
     is_enabled:b=yes
@@ -3300,7 +3331,7 @@ units{
 areas{
   "Big Boat Spawn"{
     type:t="Cylinder"
-    tm:m=[[200, 0, 0] [0, 100, 0] [0, 0, 200] [3833.85, -44.7246, 253.954]]
+    tm:m=[[200, 0, 0] [0, 100, 0] [0, 0, 200] [3800, -44.7246, 1200]]
     objLayer:i=0
 
     props{}
@@ -3308,7 +3339,7 @@ areas{
 
   "Big Boat Lookat "{
     type:t="Point"
-    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [2200, 0, 300]]
+    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [2000, -0.000244141, 200]]
     objLayer:i=0
 
     props{}
@@ -3357,6 +3388,14 @@ areas{
   "B Runner Spawn"{
     type:t="Cylinder"
     tm:m=[[50, 0, 0] [0, 100, 0] [0, 0, 50] [971.198, -50.0002, 1621.81]]
+    objLayer:i=0
+
+    props{}
+  }
+
+  "Map Area"{
+    type:t="Box"
+    tm:m=[[4500, 0, 0] [0, 4500, 0] [0, 0, 4500] [2000, 0, 2000]]
     objLayer:i=0
 
     props{}
