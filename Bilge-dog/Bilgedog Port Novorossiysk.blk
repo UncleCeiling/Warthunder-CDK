@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Bilge-dog - Port Novorossiysk"
-    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.4"
+    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v0.0.5"
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
@@ -3347,7 +3347,7 @@ areas{
 
   "C Runner Spawn"{
     type:t="Cylinder"
-    tm:m=[[50, 0, 0] [0, 100, 0] [0, 0, 50] [1235.7, -50, 1754.35]]
+    tm:m=[[50, 0, 0] [0, 100, 0] [0, 0, 50] [1277.08, -50.0002, 1608.3]]
     objLayer:i=0
 
     props{}
@@ -3379,7 +3379,7 @@ areas{
 
   "Small Boat Lookat"{
     type:t="Point"
-    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [2280.46, 0, 2288.42]]
+    tm:m=[[1, 0, 0] [0, 1, 0] [0, 0, 1] [2700, 0, 2300]]
     objLayer:i=0
 
     props{}
