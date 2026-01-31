@@ -80,7 +80,7 @@ mission_settings{
     environment:t="Day"
     weather:t="good"
     locName:t="Bilge-dog - Port Novorossiysk"
-    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v1.0.1"
+    locDesc:t="Runners go from one side of the port to the other while getting shot at by Shooters in big ships. When you die, swap teams and hop into a big ship to shoot at the Runners. v1.0.3"
     isLimitedFuel:b=no
     isLimitedAmmo:b=no
     scoreLimit:i=5000
@@ -251,7 +251,7 @@ triggers{
 
         tags{
           tank:b=yes
-          type_heavy_tank:b=no
+          type_heavy_tank:b=yes
           type_medium_tank:b=yes
           type_light_tank:b=yes
           type_tank_destroyer:b=yes
@@ -282,7 +282,7 @@ triggers{
 
         tags{
           tank:b=yes
-          type_heavy_tank:b=no
+          type_heavy_tank:b=yes
           type_medium_tank:b=yes
           type_light_tank:b=yes
           type_tank_destroyer:b=yes
@@ -313,7 +313,7 @@ triggers{
 
         tags{
           tank:b=yes
-          type_heavy_tank:b=no
+          type_heavy_tank:b=yes
           type_medium_tank:b=yes
           type_light_tank:b=yes
           type_tank_destroyer:b=yes
@@ -344,7 +344,7 @@ triggers{
 
         tags{
           tank:b=yes
-          type_heavy_tank:b=no
+          type_heavy_tank:b=yes
           type_medium_tank:b=yes
           type_light_tank:b=yes
           type_tank_destroyer:b=yes
@@ -375,7 +375,7 @@ triggers{
 
         tags{
           tank:b=yes
-          type_heavy_tank:b=no
+          type_heavy_tank:b=yes
           type_medium_tank:b=yes
           type_light_tank:b=yes
           type_tank_destroyer:b=yes
