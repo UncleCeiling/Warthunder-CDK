@@ -339,7 +339,38 @@ triggers{
         showOnMap:b=yes
         radius:r=-1
         target:t="D Runner Spawn"
-        team:t="Both"
+        team:t="A"
+        spawnArrangeTo:t="Small Boat Lookat"
+
+        tags{
+          tank:b=yes
+          type_heavy_tank:b=no
+          type_medium_tank:b=yes
+          type_light_tank:b=yes
+          type_tank_destroyer:b=yes
+          type_spaa:b=yes
+        }
+      }
+
+      missionMarkAsRespawnPoint{
+        loc_name:t="D"
+        spawnEffect:b=no
+        isStrictSpawn:b=no
+        resetStrictSpawnIndex:b=no
+        isAirfield:b=no
+        isUnit:b=no
+        forceCreate:b=no
+        useExisting:b=no
+        ignoreTeamsOnReuse:b=no
+        isIndividual:b=no
+        onlyOnePlayerPerSpawnPoint:b=no
+        removeAreas:b=no
+        replaceAreas:b=no
+        canSpawnOnNeutral:b=no
+        showOnMap:b=yes
+        radius:r=-1
+        target:t="D Shooter Spawn"
+        team:t="B"
         spawnArrangeTo:t="Small Boat Lookat"
 
         tags{
@@ -3347,7 +3378,7 @@ areas{
 
   "C Runner Spawn"{
     type:t="Cylinder"
-    tm:m=[[50, 0, 0] [0, 100, 0] [0, 0, 50] [1277.08, -50.0002, 1608.3]]
+    tm:m=[[30, 0, 0] [0, 100, 0] [0, 0, 30] [1277.08, -50.0002, 1608.3]]
     objLayer:i=0
 
     props{}
@@ -3396,6 +3427,14 @@ areas{
   "Map Area"{
     type:t="Box"
     tm:m=[[4500, 0, 0] [0, 4500, 0] [0, 0, 4500] [2000, 0, 2000]]
+    objLayer:i=0
+
+    props{}
+  }
+
+  "D Shooter Spawn"{
+    type:t="Cylinder"
+    tm:m=[[50, 0, 0] [0, 100, 0] [0, 0, 50] [2248.06, -50.0002, 2743.75]]
     objLayer:i=0
 
     props{}
