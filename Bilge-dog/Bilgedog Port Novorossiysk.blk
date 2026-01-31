@@ -339,7 +339,7 @@ triggers{
         showOnMap:b=yes
         radius:r=-1
         target:t="D Runner Spawn"
-        team:t="A"
+        team:t="Both"
         spawnArrangeTo:t="Small Boat Lookat"
 
         tags{
