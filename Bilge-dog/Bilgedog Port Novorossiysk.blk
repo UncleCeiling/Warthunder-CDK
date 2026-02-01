@@ -375,7 +375,7 @@ triggers{
 
         tags{
           tank:b=yes
-          type_heavy_tank:b=yes
+          type_heavy_tank:b=no
           type_medium_tank:b=yes
           type_light_tank:b=yes
           type_tank_destroyer:b=yes
